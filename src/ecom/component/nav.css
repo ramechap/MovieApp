@@ -1,0 +1,123 @@
+
+:root{
+    --dark-green-color:#234F34;
+    --light-green-color:#C3EFD4;
+    --dark-palm-color:#8A8A8A;
+    --light-palm-color:#D9D9D9;
+}
+/* Navbar Styles */
+
+#ecomnavt {
+    color: var(--dark-green-color);
+    background-color: transparent;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    gap: 17%;
+    text-align: center;
+    justify-content: center;
+}
+.ecomnav h1 {
+    padding-top: 0.5rem;
+    margin: 0; /* Remove default margin */
+}
+
+.ecomnav ul {
+   
+    height: 100%;
+    list-style-type: none; /* Remove bullet points */
+    display: flex; /* Use flexbox for the list */
+    justify-content: center; /* Center items */
+    margin: 0; 
+    opacity: 0.68;
+   color: #234F34;
+    padding: 0; /* Remove default margin */
+}
+
+.ecomnav ul li {
+    margin: 12px 15px; 
+    border-radius: 10px;
+    color: var(--dark-green-color);
+   /* Space between items */
+    
+}
+
+.ecomnav ul li a {
+
+    display: block; /* Make the link fill the li */
+    padding: 5px; /* Set a consistent padding */
+    color: var(--dark-green-color);
+    font-weight: 600;
+    font-size: 20px;
+    background-color: transparent; /* Ensure contrast */
+    text-decoration: none;
+}
+
+.ecomnav ul li a:hover {
+    color: white; /* Consider adding a background color on hover */
+    font-weight: 600;
+}
+
+.bellecom {
+    padding-top: 0.5rem;
+    display: flex;
+  
+}
+
+.bellecom button {
+    font-size: 20px;
+    color: var(--dark-green-color);
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+    border: 2px solid #234F34;
+  
+  width: 100px;
+  height: 50px;
+
+    font-weight: 500;
+}
+.bellecom button:hover {
+   color: var(--dark-green-color);
+  
+   transition:all 0.15s ease-in;
+    background-color:#ccf6dc;
+    
+  
+}
+
+  
+  
+#ecomnavc{
+    color: var(--dark-green-color);
+    background-color: #C3EFD4;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    height: 100px;
+    flex-direction: row;
+    gap: 17%;
+    text-align: center;
+    justify-content: center;
+    }
+  
+
+  
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav.ecomnav {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .ecomnav ul {
+        flex-direction: column; /* Stack nav items */
+        align-items: center; /* Center items */
+    }
+
+    .bellecom {
+        justify-content: center; /* Center bell icons */
+    }
+}

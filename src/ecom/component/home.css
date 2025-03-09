@@ -1,0 +1,696 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+    --dark-green-color: #234F34;
+    --light-green-color: #C3EFD4;
+    --dark-palm-color: #8A8A8A;
+    --light-palm-color: #D9D9D9;
+}
+
+* {
+    box-sizing: border-box;
+    /* Apply to all elements */
+    margin: 0;
+    /* ecomet margins */
+    padding: 0;
+    /* ecomet padding */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+.imgHomeecom {
+    background: var(--light-green-color);
+    position: relative;
+    /* Ensure that child elements are positioned relative to this */
+    overflow: hidden;
+    /* Hide overflow to avoid image spilling out */
+    width: 100%;
+    /* Make the div take full width */
+    height: 700px;
+    /* Set a specific height or adjust as needed */
+}
+
+.homeecom .eimageOverlay {
+    position: absolute;
+    /* Overlay positioning */
+    top: 0;
+    left: 50%;
+    /* Align to the left */
+    width: 50%;
+    /* Cover half the width */
+    height: 100%;
+    /* Full height */
+
+    /*  background-color: rgba(0, 0, 0, 0.5);  Semi-transparent dark background*/
+    z-index: 1;
+    /* Ensure it is above the image */
+    display: flex;
+    /* Use flexbox for centering text */
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: center;
+    /* Center text vertically */
+    padding: 20px;
+    /* Font size */
+
+    text-align: center;
+    /* Optional padding */
+}
+
+.imageecom {
+    padding-right: 5%;
+
+    z-index: 2;
+    /* Above the overlay */
+    text-align: right;
+    /* Align text to the left */
+}
+
+.imageecom img {
+    width: 250px;
+}
+
+.homeecom .etextOverlay {
+    position: absolute;
+    /* Overlay positioning */
+    top: 0;
+    left: 0;
+    /* Align to the left */
+    width: 50%;
+    /* Cover half the width */
+    height: 100%;
+    /* Full height */
+
+    /*  background-color: rgba(0, 0, 0, 0.5);  Semi-transparent dark background*/
+    z-index: 1;
+    /* Ensure it is above the image */
+    display: flex;
+    /* Use flexbox for centering text */
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: center;
+    /* Center text vertically */
+    padding: 20px;
+    /* Font size */
+
+    text-align: center;
+    /* Optional padding */
+}
+
+.textecom {
+    padding-left: 5%;
+
+    z-index: 2;
+    /* Above the overlay */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.textecom span,
+.textecom h1,
+.textecom p,
+.textecom button {
+    margin: 10px 0;
+    /* Space between elements */
+}
+
+.textecom {
+    max-width: 600px;
+}
+
+.textecom span,
+.textecom h1,
+.textecom p {
+    margin: 15px 0;
+    /* Adjust this value to increase or decrease spacing */
+}
+
+.textecom button {
+    margin-top: 20px;
+    /* Adds space above the button */
+}
+
+.textecom span {
+    font-size: 10px;
+}
+
+.textecom div {
+    float: left;
+}
+
+.textecom span {
+    font-size: 15px;
+}
+
+.textecom p {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: justify;
+}
+
+.textecom h1 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+    font-size: 75px;
+    font-weight: 500;
+    text-align: left;
+
+
+}
+
+.ecomallpost-rent {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap */
+
+}
+
+.postecomrent {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.postecomrent p {
+
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.postecomrent span {
+    color: #12121299;
+    width: 210px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.textecom button {
+    background-color: var(--dark-green-color);
+    border: none;
+    width: 150px;
+
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+
+
+}
+
+.postecom {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* Ensure it takes the full width of its container */
+    max-width: 300px;
+    /* Set a maximum width to prevent it from growing indefinitely */
+    margin: 10px;
+    /* Space between posts */
+}
+
+.ecomallpost {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-wrap: wrap;
+    /* Allow wrapping of posts */
+}
+
+.ecomallposts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center items horizontally */
+}
+
+.postecomt {
+    margin-bottom: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow wrapping of post boxes */
+    justify-content: space-between;
+    /* Space between posts */
+    margin: 0 auto;
+    /* Center the posts */
+}
+
+.postecom>img {
+    width: 95%;
+    height: 200px;
+}
+
+.postecom div p {
+    font-family: "Poppins", serif;
+    font-optical-sizing: auto;
+
+    font-style: normal;
+}
+
+.ecomallposts {
+    margin-top: 5%;
+    display: grid;
+}
+
+.postecom div button {
+    background-color: var(--dark-green-color);
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.postecom div button:hover {
+    background-color: #2b6641;
+}
+
+.ecomallpost {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 90px;
+    justify-items: center;
+    justify-content: space-between;
+    /* Distribute space between items */
+    margin: 0px 0%;
+    /* margin: 0px 7%;     */
+}
+
+.ecomallpost-rent {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 90px;
+    justify-items: center;
+    justify-content: space-between;
+    /* Distribute space between items */
+    margin: 0px -13%;
+}
+
+.ecomallpost-product {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    justify-items: center;
+    justify-content: space-between;
+    /* Distribute space between items */
+    margin: 0px 17%;
+}
+
+.ecompostbox {
+    color: var(--dark-green-color);
+    margin-top: 1%;
+
+    display: grid;
+    gap: 5%;
+}
+
+.ecom-postsection-2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.ecom-postitem {
+    display: grid;
+    gap: 5%;
+    padding: 0px 6%;
+}
+
+.ecom-postsection-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.postecom {
+    /* Adjust width as needed */
+    display: grid;
+    border: 3px solid #C3EFD4;
+    /* padding: 1.25rem 0 4rem; */
+
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+.ecomimgpost {
+    height: 225px;
+}
+
+#hr {
+    border-top: 3px solid #969696;
+    margin: 10px auto;
+    max-width: 6%;
+
+}
+
+.ecompost-content {
+
+    height: 170px;
+
+    background-color: var(--light-green-color);
+}
+
+.ecompost-content div p {
+    margin-bottom: 0px;
+    overflow: hidden;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+#ecomshowmore-btn {
+    background-color: transparent;
+    border: 2px solid #234F34;
+    font-weight: bold;
+    color: var(--dark-green-color);
+    border-radius: 2px;
+    width: 150px;
+    text-align: center;
+    height: 40px;
+    justify-content: center;
+}
+button#ecomshowmore-btn:hover{
+    transition: 0.5s ease-in;
+    background-color: #234F34;
+    border: 2px solid white;
+ 
+    color: white;
+
+}
+
+.ecomcatelist {
+    /* display: flex;
+gap: 5%;
+
+
+ 
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding: 90px;
+    justify-items: center;
+   width: 50vw; */
+    display: flex;
+    gap: 5%;
+    flex-wrap: wrap;
+    overflow: hidden;
+
+    margin: 10% auto;
+    justify-items: center;
+    justify-content: center;
+    width: 100vw;
+
+
+}
+
+#ecomimgpost-cate {
+
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+}
+
+.catelist-btn {
+    border: 2px solid #0ddb5c;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    margin-top: 20px;
+    /* Optional: adds space above the button */
+}
+
+.catelist-btn:hover {
+    box-shadow: 0px 0px 4px #0ddb5c;
+}
+
+.postecomt {
+    display: grid;
+    gap: 2%;
+    margin-bottom: 90px;
+}
+
+.postecom {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    /* Adjust as needed */
+}
+
+.rallposts {
+    margin-bottom: 10px;
+    /* Space between sections */
+}
+
+.ecompostbox {
+
+
+    min-height: 200px;
+    /* Ensure it can grow */
+    display: flex;
+    flex-direction: column;
+    /* Stack content */
+}
+
+.button-container {
+    text-align: center;
+    /* Center the button */
+    margin-top: 20px;
+    /* Space above the button */
+}
+
+
+
+.contactHomeecom {
+    margin-top: 15%;
+    position: relative;
+    /* Ensure that child elements are positioned relative to this */
+    overflow: hidden;
+    /* Hide overflow to avoid image spilling out */
+    width: 100%;
+    /* Make the div take full width */
+    height: 500px;
+    /* Set a specific height or adjust as needed */
+}
+
+.contactHomeecom img {
+    width: 100%;
+    /* Make image width ecomponsive to div */
+    height: 100%;
+    /* Make image height ecomponsive to div */
+    object-fit: fill;
+    /* Maintain aspect ratio, cover entire div */
+}
+
+.textcontactOverlay {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+
+    position: absolute;
+    /* Overlay positioning */
+    top: 50%;
+    left: 50%;
+    /* Align to the left */
+    width: 50%;
+    /* Cover half the width */
+    height: 100%;
+    transform: translate(-50%, -50%);
+    /* Full height */
+
+    /*  background-color: rgba(0, 0, 0, 0.5);  Semi-transparent dark background*/
+    z-index: 1;
+    /* Ensure it is above the image */
+    display: flex;
+    /* Use flexbox for centering text */
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: center;
+    /* Center text vertically */
+    padding: 20px;
+    /* Font size */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    /* Shadow for better readability */
+    text-align: center;
+    /* Optional padding */
+}
+
+.contacttextecom div h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.contacttextecom div input {
+    color: black;
+    font-size: 20px;
+    width: 50%;
+}
+
+.contacttextecom div button {
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    width: 50%;
+}
+
+.contacttextecom {
+    display: grid;
+    gap: 20%;
+}
+
+#img-drone-1 {
+    width: 200px;
+    border-radius: 20px;
+    height: 100%;
+
+}
+
+#img-drone {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+
+}
+
+.container-drone-image {
+    display: flex;
+    gap: 3%;
+    height: 100%;
+}
+
+.drone-image-small {
+    display: grid;
+    gap: 2%;
+    width: 300px;
+}
+
+.drone-image-large {
+    height: 400px;
+    width: 300px;
+}
+
+
+@media (max-width: 768px) {
+    .postecom {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* Single column layout on smaller screens */
+
+    }
+
+    .textecom h1 {
+        font-size: 3rem;
+        /* Reduce font size on mobile */
+    }
+
+    .textecom button {
+        width: 100%;
+        /* Full width button for better tap area */
+        padding: 10px;
+
+
+    }
+
+    .contactHomeecom {
+        height: 300px;
+        /* Reduce height for smaller screens */
+    }
+
+    .contactHomeecom img {
+        object-fit: cover;
+        /* Maintain aspect ratio */
+    }
+
+    #img-drone-1 {
+        width: 100%;
+        border-radius: 20px;
+        height: 100%;
+
+    }
+
+    #img-drone {
+        display: none;
+
+    }
+
+    .postecomt {
+        margin-top: 40px;
+    }
+
+    .container-drone-image {
+        display: grid;
+        gap: 3%;
+        height: 100%;
+    }
+
+    .drone-image-small {
+        justify-items: center;
+        justify-content: center;
+        /* gap: 2%; */
+        height: 500px;
+        width: 100%;
+    }
+
+    .drone-image-large {
+        display: none;
+    }
+
+    .ecomcatee {
+        width: 100%;
+        overflow-x: hidden;
+        padding: 0 1rem;
+    }
+
+    .ecomallpost-rent {
+        display: flex;
+        flex-wrap: wrap;
+        /* Allow items to wrap */
+        justify-items: center;
+        justify-content: center;
+        justify-self: center;
+
+    }
+
+    .postecomrent {
+        display: flex;
+        width: 100%;
+        justify-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ecomcatelist {
+        display: flex;
+        gap: 0.75rem;
+        overflow-x: auto;
+        padding: 0.75rem 13px 0.7rem;
+        scrollbar-width: none;
+    }
+}

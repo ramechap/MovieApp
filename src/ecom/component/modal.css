@@ -1,0 +1,69 @@
+body.active-modal{
+    overflow-y: hidden;
+}
+.modal-ecom,.modal-ecom>.overlay{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.modal-ecom>.overlay{
+    background-color: rgba(49,49,49,0.8);
+}
+.modal-ecom .btn-cart {
+    display: flex;
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-around; /* Space out items evenly */
+    position: absolute; /* Position relative to the container */
+    bottom: 20px; /* Adjust the distance from the bottom */
+    width: 100%; /* Stretch to full container width if needed */
+}
+.modal-ecom button.view-btn{
+    background: rgb(4, 135, 243);
+}
+.modal-ecom button.clear-btn,.view-btn{
+    
+        width: 100px;
+        border: none;
+        border-radius: 20px;
+        background: rgb(114, 114, 114);
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+        
+    
+
+}
+.modal-ecom>.modal-content{
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 1.4;
+    height: 300px;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 300px;
+   
+   
+}
+
+.modal-ecom svg.close-modal {
+    position: absolute;
+    
+   
+    top: 10px;
+    right: 10px;
+   
+    font-size: xx-large;
+    color: green;
+    cursor: pointer;
+   
+}

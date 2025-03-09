@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+:root{
+    --white-color:#fff;
+    --black-color:#000;
+    --light-white-color:#f0f0f0;
+    --light-gray-color:#e5e5e5;
+    --border-color:#d4d4d4;
+    --primary-color:#3b82f6;
+    --secondary-color:#404040;
+    --overlay-dark-color:rgba(0,0,0,0.6);
+
+}
+
+.admin-div   {
+    display: grid;
+    gap: 1rem;
+    padding: 1.25rem 0 4rem;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+
+
+
+  overflow-y: auto;
+  width: 70%;
+  overflow-x: hidden;
+  padding: 0 1rem;  
+
+  height: 100vh; /* Full height of the screen */
+  overflow: hidden; /* Hide overflow */
+  margin-left: auto;   
+   }
+
+
+
+
+
+
+
+.allyoutube-container .video-list {
+ display: grid;
+ gap: 1rem;
+ padding: 1.25rem 0 4rem;
+ grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+ }
+
+
+.allyoutube-container .video-list .video-card .thumbnail-container{
+    position: relative;
+}
+
+.allyoutube-container .video-list .video-card .duration{
+    position: absolute;
+    right: 0.65rem;
+    bottom: 0.8rem;
+    color: #fff;
+    font-size: 0.875rem;
+    padding: 0 0.3rem;
+    border-radius: 0.3rem;
+    background: var(--overlay-dark-color);
+}
+
+
+.allyoutube-container .video-list .video-card .thumbnail{
+    width: 100%;
+    border-radius: 0.5rem;
+    aspect-ratio: 16/9;
+}
+
+.allyoutube-container .video-list .video-card .video-info{
+display: flex;
+gap: 0.7rem;
+padding: 0.7rem 0.5rem;
+color: var(--black-color);
+}
+
+.allyoutube-container .video-list .video-card {
+   text-decoration: none;
+}
+
+.allyoutube-container .video-list .video-card .icon{
+    width:36px;
+    height: 36px;
+    border-radius:50%;
+    color: var(--black-color);
+}
+.allyoutube-container .video-list .video-card .title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black-color);
+
+    overflow: hidden;
+    display: -webkit-box;
+ -webkit-box-orient: vertical;
+ -webkit-line-clamp: 2;
+ }
+
+ .allyoutube-container .video-list .video-card .title:hover{
+  
+    color: var(--primary-color);
+ }
+
+
+ .allyoutube-container .video-list .video-card p{
+    font-size: 0.875rem;
+ 
+    color: var(--secondary-color);
+ }
+

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+.categorymovie {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+   
+    font-style: normal;
+    background-color: #111112;
+}
+
+
+.categorymovie .grid-container { 
+    display: flex; 
+    flex-wrap: wrap; /* Allows items to wrap to the next line */ 
+    justify-content: space-between; 
+} 
+.movieallpostsc{
+   margin-top: 1%;
+}
+.categorymovie div button {
+  background-color: transparent;
+  border: none;
+  color: #fd7763;
+  font-size: 15px;
+  font-weight: 500;
+
+}
+.categorymovie div button a {
+ text-decoration: none;
+ color: #fd7763;
+ font-size: 15px;
+ font-weight: 500;
+
+}
+.searchmovieallpostc {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between; /* Distribute space between items */
+   margin: 5px 17%;/* Optional: Adjust margin for spacing */
+}
+
+
+.searchmoviepostboxc{
+   margin-top: 5%;
+   display: grid;
+   gap: 2%;
+}
+
+.categorymovie #searching{
+    display:flex;
+justify-content: center;
+
+    
+ }
+
+ .categorymovie #searching>input{
+    border:4px solid #FF00BF;
+    text-align: center;
+    color:black;
+    font-weight:600;
+    font-size:25px;
+    height:40px;
+    width:600px;
+    border-radius:15px;
+    
+ }
+
+
+ .categorymovie .searchmovieallpostsc{
+   display: flex;
+   flex-wrap: wrap;
+margin-top: 5%;
+   justify-content: space-between;
+
+ }
+ 
+ @media (max-width: 768px) {
+   .categorymovie .searchmovieallpostc{
+       flex: 1 1 calc(50% - 20px); /* 2 items per row on smaller screens */
+   }
+}
+
+@media (max-width: 480px) {
+   .categorymovie .searchmovieallpostc{
+       flex: 1 1 100%; /* 1 item per row on very small screens */
+   }
+}
+
+.categorymovie {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+
+}
+
+.searchmovieallpostsc {
+   margin-bottom: 20px; /* Space between sections */
+}
+.grid-container {
+
+   display: grid;
+   grid-template-columns: repeat(4, 1fr); /* Create 4 equal columns */
+   gap: 20px; /* Space between items */
+   height: 100%;
+   min-height: 400px; /* Adjust this value as needed */
+}
+
+.no-results {
+   color: white;
+   text-align: center;
+   margin-top: 20px; /* Center the no results message */
+   font-size: 1.5rem;
+}
+.searchmoviepostboxc {
+ 
+   min-height: 200px; /* Ensure it can grow */
+   display: flex;
+   flex-direction: column; /* Stack content */
+}
+
+.searchrpost-content{
+   display: grid;
+   margin-top: 5%;
+}
+.searchmoviepost-contentc div p {
+   margin-bottom: 0px;
+}
+img#searchmovieimgpost:hover{
+   -webkit-transform: scale(1.06);
+	transform: scale(1.06);
+   opacity: 0.8;
+}
+.searchpostmoviee{
+    background-color: black;
+    min-height: 300px;
+    border-radius: 10px;
+    border: none;
+    width: 100%; /* Ensure it takes the full width of its container */
+    max-width: 280px;
+}
+footer.rfoot {
+   width: 100%;
+}
+.searchmovieimgpost{
+    border-radius: 10px;
+   height: 280px;
+   width: 100%;
+}
+img#searchmovieimgpost {
+   -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+.searchpostmoviee-n{
+    background-color: #0a0a0cd2;
+    min-height: 200px;
+   
+    border: none;
+    width: 100%; /* Ensure it takes the full width of its container */
+    max-width: 260px;
+}
+
+.searchmovieimgpost-n{
+ 
+   height: 200px;
+   width: 100%;
+}
+img#searchmovieimgpost-n {
+    border: none;
+  
+    height: 100%;
+}
+.searchrpost-content{
+    display: grid;
+    margin-top: 2%;
+}
+.searchrpost-content div p {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+.searchrpost-content>div{
+   justify-content: left;
+}
+
+
+
+

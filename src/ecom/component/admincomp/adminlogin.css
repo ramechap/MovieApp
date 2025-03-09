@@ -1,0 +1,192 @@
+.adminlogincontainerr{
+    background-color:#ffc;
+}
+.adminlogincontainerr>form{
+    justify-content:center;
+    display:grid;
+    
+    height:400px;
+    position :absolute;
+    border:0.25pt solid #e8e8e8;
+    top: 17%;
+    overflow:hidden;
+    left:30%;
+    overflow: hidden;
+width: 39em;
+min-width: 300px;
+
+   
+    transform: translate(-50, -50%);
+
+}
+.adminlogincontainerr>#div1{
+    
+    width:600px;
+    color:white;
+    background-color: #17B169;
+    height:80px;
+    text-align:center;
+
+}
+.adminlogincontainerr>#div2 input{
+    border:0.5pt solid #00FF40;
+    width:500px;
+    height:50px;
+    border-radius:8px;
+
+    
+    
+
+}
+.adminlogincontainerr>#div3, #div4{
+    display:grid;
+    position:relative;
+    left:40px;
+}
+.adminlogincontainerr>#div1 h1{
+    position :relative;
+    font-size:30px;
+    top:18px;
+    
+    
+    font-weight: 600;
+}
+.adminlogincontainerr>#div2{
+    display:grid;
+    position:relative;
+    bottom:20px;
+    background:#fff;
+}
+.adminlogincontainerr>label{
+    color:black;
+    font-weight:600;
+    font-size:20px;
+}
+.adminlogincontainerr>#but{
+    margin-top:15px;
+    text-align:center
+}
+.adminlogincontainerr>#but .button:hover{
+transition:0.5s;
+cursor:pointer;
+background-color:#4FFFB0;
+text-align:center;
+color:white;
+height:45px;
+width:130px;
+border:none;
+border-radius:8px;
+font-size:20px;
+
+}
+
+
+.adminlogincontainerr>#but .button{
+
+    background-color:#17B169;
+    text-align:center;
+color:white;
+    height:45px;
+    cursor:pointer;
+    width:130px;
+    border:none;
+    border-radius:8px;
+    font-size:20px;
+
+}
+@media screen and (max-width:902px){
+    .adminlogincontainerr>  form{
+    justify-content:center;
+    display:grid;
+    
+    height:400px;
+    position :absolute;
+    border:0.25pt solid #e8e8e8;
+    top: 17%;
+    overflow:hidden;
+    left:13%;
+    
+width: 300px;
+min-width: 100px;
+
+   
+    transform: translate(-50, -50%);
+
+}
+.adminlogincontainerr>#div1{
+    
+    width:300px;
+    color:white;
+    background-color: #17B169;
+    height:80px;
+    text-align:center;
+
+}
+.adminlogincontainerr>#div2 input{
+    border:0.5pt solid #00FF40;
+    width:250px;
+    height:40px;
+    border-radius:8px;
+
+    
+    
+
+}
+.adminlogincontainerr>#div3, #div4{
+    display:grid;
+    position:relative;
+    left:20px;
+}
+.adminlogincontainerr>#div1 h1{
+    position :relative;
+    font-size:23px;
+    top:18px;
+    
+    
+    font-weight: 600;
+}
+.adminlogincontainerr>#div2{
+    display:grid;
+    position:relative;
+    bottom:20px;
+    background:#fff;
+}
+.adminlogincontainerr>label{
+    color:black;
+    font-weight:500;
+    font-size:20px;
+}
+.adminlogincontainerr>#but{
+    margin-top:15px;
+    text-align:center
+}
+.adminlogincontainerr>#but .button:hover{
+transition:0.5s;
+cursor:pointer;
+background-color:#4FFFB0;
+text-align:center;
+color:white;
+height:45px;
+width:130px;
+border:none;
+border-radius:8px;
+font-size:20px;
+
+}
+
+
+.adminlogincontainerr>#but .button{
+
+    background-color:#17B169;
+    text-align:center;
+color:white;
+    height:45px;
+    cursor:pointer;
+    width:130px;
+    border:none;
+    border-radius:8px;
+    font-size:20px;
+
+}
+
+}

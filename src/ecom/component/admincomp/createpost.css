@@ -1,0 +1,63 @@
+.ecomadminmain-content {
+
+    overflow-y: scroll;
+    flex-grow: 1;
+    padding: 30px;
+    width: 50vw;
+    background-color: white;
+  }
+  
+  .ecomadminmain-content> h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .ecomadminmain-content> form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .ecomadminmain-content>  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .ecomadminmain-content>  label {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .ecomadminmain-content> input[type="text"],
+  input[type="number"],
+  input[type="file"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .ecomadminmain-content> textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+  
+  .ecomadminmain-content> button.submit-btn {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .ecomadminmain-content>button.submit-btn:hover {
+    background-color: #0056b3;
+  }

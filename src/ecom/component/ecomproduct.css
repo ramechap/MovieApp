@@ -1,0 +1,474 @@
+:root {
+    --dark-green-color: #234F34;
+    --light-green-color: #C3EFD4;
+    --dark-palm-color: #8A8A8A;
+    --light-palm-color: #D9D9D9;
+}
+
+.ecom-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 90px;
+    padding: 0 3%;
+    
+
+
+}
+
+
+
+
+
+
+
+.ecom-section .similar-product {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 5% 0;
+    
+}
+
+.ecom-section .similar-product .postecom {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    
+    width: 100%;
+    max-width: 1200px; /* Max width for the grid container */
+    margin: 0 auto; /* Center the grid container */
+}
+
+.ecom-section .similar-product .postecom > img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; /* Ensures image is properly cropped within its container */
+}
+
+.ecom-section .similar-product .postecom div p {
+    font-family: "Poppins", serif;
+    font-size: 16px;
+    line-height: 1.5;
+    font-style: normal;
+}
+
+.ecom-section .similar-product .postecom div button {
+    background-color: var(--dark-green-color);
+    border: none;
+    color: white;
+    font-size: 18px;
+    width: 130px;
+    height: 35px;
+    text-align: center;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ecom-section .similar-product .postecom div button:hover {
+    background-color: #2b6641;
+}
+
+.ecom-section .similar-product .postecomt {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.ecom-section .similar-product .postecomt .ecom-postitem {
+    display: grid;
+    gap: 15px;
+    padding: 0 6%;
+}
+
+.ecom-section .similar-product .ecom-postsection-2, .ecom-section .similar-product .ecom-postsection-3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.ecom-section .similar-product .ecom-postsection-2 {
+    margin-top: 10px;
+}
+
+.ecom-section .similar-product .ecomimgpost {
+    height: 225px;
+    overflow: hidden;
+}
+
+.ecom-section .similar-product .ecomallposts {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    margin-top: 5%;
+}
+
+.ecom-section .similar-product .ecomallpost {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.ecom-section .similar-product .ecomallpost-rent, 
+.ecom-section .similar-product .ecomallpost-product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -13%;
+    padding: 20px;
+}
+
+.ecom-section .similar-product .ecompostbox {
+    color: var(--dark-green-color);
+    margin-top: 1%;
+    display: grid;
+    gap: 20px;
+}
+
+/* Add responsiveness for smaller screens */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.device-product {
+    display: flex;
+}
+
+.ecom-section .image-content {
+    display: flex;
+
+    height: 80vh;
+    flex: 5;
+
+}
+
+.ecom-section .image-content .imagy img {
+    flex-basis: 100%;
+    height: 100%;
+}
+
+.ecom-section .about-content {
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    flex: 5;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about-content>.title-about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+
+.about-content>.title-about h2 {
+    font-size: 40px;
+}
+
+.about-content>.rating-about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5%;
+}
+
+.about-content>.rating-about p {
+    margin-top: 5%;
+    font-size: 20px;
+    color: var(--dark-palm-color);
+}
+
+.about-content>.quantity-about div {
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-start;
+    gap: 5%;
+}
+
+.about-content>.quantity-about {
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-start;
+}
+
+.about-content>.quantity-about p {
+    font-size: 25px;
+    text-align: center;
+}
+
+.about-content>.quantity-about button {
+    border: none;
+    background-color: transparent;
+}
+
+.about-content>.quantity-about input {
+    background-color: #C3EFD4;
+    border: none;
+}
+
+.about-content>.quantity-about button:hover {
+    border: none;
+    background-color: #d4d2d2;
+
+}
+
+.about-content>.quantity-about input {
+    width: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    text-align: center;
+}
+.about-content>.quantity-about button
+{
+    width: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    height: 50px;
+    text-align: center;
+}
+.about-content>.price-about {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: flex-start;
+    gap: 5%;
+}
+
+.about-content>.category-about {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    justify-content: flex-start;
+    gap: 2%;
+}
+
+.about-content>.title-about,
+.rating-about,
+.quantity-about,
+.price-about,
+.category-about {
+    flex: 3;
+    padding-left: 50px;
+    /* border:1px solid black */
+
+}
+.speci-product{
+    display: flex;
+}
+
+.speci-product .description-content {
+    display: flex;
+    flex: 5;
+    justify-content: start;
+    align-items: start;
+    word-break: break-all;
+    flex-direction: column;
+
+
+
+}
+
+.speci-product .description-content p {
+    word-wrap: break-word;
+    flex-wrap: wrap;
+    font-size: 18px;
+    display: flex;
+}
+
+.speci-product .description-content p:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+
+
+}
+
+.speci-product .description-content p:last-child::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.speci-product .description-content p:last-child::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.speci-product .description-content p:last-child::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.speci-product .description-content p:last-child::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.speci-product .description-content p:last-child {
+    font-weight: 500;
+    overflow-wrap: break-word;
+    flex-wrap: wrap;
+    word-break: break-all;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    max-height: 300px; 
+
+
+}
+
+.speci-product .specification-content {
+    display: flex;
+    flex: 5;
+    justify-content: start;
+    align-items: start;
+    word-break: break-all;
+    flex-direction: column;
+    padding-left: 50px;
+    border: 1px solid solid;
+
+}
+
+.speci-product .specification-content p:nth-child(1) {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.speci-product .specification-content ul {
+    list-style: none;
+    font-weight: 500;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.speci-product .specification-content ul li::before {
+    content: '✓';
+    margin-right: 10px;
+    color: rgb(41, 162, 248);
+    font-size: 20px;
+
+}
+
+.button-product {
+    display: flex;
+    height: 15vh;
+    margin-top: 20px;
+  
+    justify-content: space-between;
+}
+
+.button-product button {
+
+    height: 60%;
+    font-weight: 500;
+    width: 40%;
+
+
+}
+
+.button-product button:first-child {
+    background-color: #d4d2d2;
+    border: none;
+    color: black;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.button-product button:last-child {
+    background-color: var(--dark-green-color);
+    color: white;
+
+    font-size: 25px;
+    text-align: center;
+
+}
+
+@media (max-width: 768px) {
+    .ecom-section {
+        display: flex;
+        flex-wrap: wrap;
+
+        flex-direction: column;
+        margin-top: 90px;
+
+
+    }
+    .ecom-section .image-content {
+        display: flex;
+        height: 60vh;
+        flex: 5 ;
+    }
+    .device-product {
+        display: grid;
+
+    }
+
+    .speci-product {
+        display: grid;
+
+
+    }
+
+    .speci-product .specification-content {
+        padding: 0;
+    }
+    .button-product{
+        display: flex;
+        
+       
+        }
+        .button-product button {
+
+            height: 50%;
+            font-weight: 500;
+            width: 40%;
+        
+        
+        }
+        .about-content>.title-about,
+.rating-about,
+.quantity-about,
+.price-about,
+.category-about {
+  
+    padding: 0;
+    /* border:1px solid black */
+
+}
+}
+
